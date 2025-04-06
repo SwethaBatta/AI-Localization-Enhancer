@@ -1,34 +1,27 @@
-# AI Translation Enhancer (Gradio)
+# 🌍 AI Translation Enhancer
 
-This version uses **Gradio** instead of Streamlit to build an English-to-German translation UI using Hugging Face's MarianMT.
+An AI-powered multilingual translation app that enhances text translation quality using Neural Machine Translation (NMT) and BLEURT-based quality scoring. Built with Gradio for an intuitive web UI, the tool supports audio playback, source-target language filtering, and dynamic quality feedback.
 
-## Setup Instructions
+---
 
-1. Unzip or clone this repo.
-2. Set up a virtual environment:
+## ✨ Features
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+- ✅ Translate text between multiple languages (English, Hindi, Telugu, Tamil, Spanish, French, German)
+- 🎯 Intelligent filtering of target languages based on source
+- 🔊 Text-to-speech playback for translated output
+- 📊 BLEURT-based quality scoring for translation confidence
+- 🌐 Gradio-based modern UI with language labels
+- 📘 Quality meter with scoring legend for interpretation
 
-3. Install dependencies:
+---
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🧠 Tech Stack
 
-4. Run the app:
+- Python 3.x
+- Gradio for web UI
+- Hugging Face Transformers (MarianMT)
+- BLEURT for translation quality evaluation
+- pyttsx3 for text-to-speech (TTS)
+- TensorFlow backend
 
-   ```bash
-   python app/main.py
-   ```
-
-Then open your browser at the provided `http://localhost:7860`.
-
-## Requirements
-
-- Hugging Face Transformers
-- Torch
-- Gradio
-- SentencePiece
+---
